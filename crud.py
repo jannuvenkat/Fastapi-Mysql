@@ -1,3 +1,6 @@
+from models import Employee
+
+
 def create_employee(db, employee):
     new_emp = Employee(**employee.dict())
     db.add(new_emp)
